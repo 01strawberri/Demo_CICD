@@ -12,8 +12,6 @@ package com.giaolang.mathutil.core;
 //class tiện ích dùng chung về math
 public class MathUtil {
 
-    public static final double PI = 3.14159;
-
     public static long getFactorial(int n) {
 //        ko tính số âm, ko tính 21! trở lên
         if (n < 0) {
@@ -30,7 +28,7 @@ public class MathUtil {
         if (n <= 1) {
             return false; // 0 và 1 không phải là số nguyên tố
         }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
+        for (int i = 0; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return false;
             }
